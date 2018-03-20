@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>TorchCoin | The high quality, completely customizable, performant and 100% free blog template for Jekyll</title>
+  <title>TorchCoin | TorchCoin -- the platform where deep learning researchers and cryptocurrency miners can share GPU resources</title>
   <meta name="description" content="TorchCoin (TCH) is a cryptocurrency backed by the training of deep learning models written in PyTorch on the blockchain.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -63,7 +63,9 @@
   </ul>
 </nav>
 
-        <ul class="article-list">
+        <a href="https://github.com/torchcoin"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png" alt="Fork me on GitHub"></a>
+
+<ul class="article-list">
 
   <li class="article-list-item ">
 
@@ -72,6 +74,17 @@
       <br/><br/>Training PyTorch models is the mechanism behind mining TorchCoin.
       <br/>Verified deep learning researchers may submit their models to be trained on the blockchain.
       <br/>Miners use GPUs to train submitted PyTorch models for a TorchCoin reward.
+    </p>
+    <br/><h3>Why?</h3>
+    <p>
+      GPU resources are scarce due to their growing popularity in the cryptocurrency mining community,
+      and for this reason among others, deep learning researchers often have difficulty obtaining GPU resources
+      for their research. Training deep learning models as the mechanism for mining cryptocurrency is beneficial
+      to everyone involved.
+    </p>
+    <br/><h3>Why PyTorch?</h3>
+    <p>
+      Yo Tensorflow, I'm really happy for you, I'll let you finish, but PyTorch has one of the best dynamic computation graph engines of all time.
     </p>
 
   </li>
@@ -86,18 +99,20 @@
 
     <h3>For deep learning researchers</h3>
     <p>
-      First, install the TorchCoin model submission tools...
+      First, install the <a href="https://github.com/torchcoin/tc-submit">TorchCoin model submission tools</a>...
       <br/>Submit your models using:
     </p>
 
-    <figure class="highlight"><pre><code class="language-bash" data-lang="bash">    <span class="nv">$ </span>tcsubmit <span class="o">[</span>git_clone_url] <span class="o">[</span>dataset_url]
+    <figure class="highlight"><pre><code class="language-bash" data-lang="bash">    <span class="nv">$ </span>tcsubmit <span class="nt">--git_clone_url</span> <span class="o">[</span>git_clone_url] <span class="se">\</span>
+    <span class="nt">--dataset_url</span> <span class="o">[</span>dataset_url]
     </code></pre></figure>
 
     <p>
       For example:
     </p>
 
-    <figure class="highlight"><pre><code class="language-bash" data-lang="bash">    <span class="nv">$ </span>tcsubmit https://github.com/nick11roberts/PGCnet.git <span class="se">\</span>
+    <figure class="highlight"><pre><code class="language-bash" data-lang="bash">    <span class="nv">$ </span>tcsubmit
+    https://github.com/nick11roberts/PGCnet.git
     https://drive.google.com/open?id<span class="o">=</span>0BzHWFkitR5d_VjJfS1ZmMDV5RmM
     </code></pre></figure>
 
@@ -105,22 +120,41 @@
 
     <h3>For miners</h3>
     <p>
-      First, install the TorchCoin mining software...
+      First, install the <a href="https://github.com/torchcoin/tc-miner">TorchCoin mining software</a>...
       <br/>Start the mining process by:
     </p>
 
-    <figure class="highlight"><pre><code class="language-bash" data-lang="bash">    <span class="nv">$ </span>tcsubmit <span class="o">[</span>git_clone_url] <span class="o">[</span>dataset_url]
+    <figure class="highlight"><pre><code class="language-bash" data-lang="bash">    <span class="nv">$ </span>tcminer <span class="nt">--wallet_address</span> <span class="o">[</span>wallet_address] <span class="se">\</span>
+    <span class="nt">--pool_address</span> <span class="o">[</span>pool_address]
+    </code></pre></figure>
+
+    <p>
+      For example:
+    </p>
+
+    <figure class="highlight"><pre><code class="language-bash" data-lang="bash">    <span class="nv">$ </span>tcminer
+    6xkabhmf28hr7o2v1pgo8r7nq5
+    w1bbdurg7u2clgl5mujg1pp95t
     </code></pre></figure>
 
 
 
     <h3>For traders</h3>
     <p>
-      First, install the TorchCoin wallet software...
+      First, install the <a href="https://github.com/torchcoin/tc-wallet">TorchCoin wallet software</a>...
       <br/>Transfer TorchCoin using:
     </p>
 
-    <figure class="highlight"><pre><code class="language-bash" data-lang="bash">    <span class="nv">$ </span>tcsubmit <span class="o">[</span>git_clone_url] <span class="o">[</span>dataset_url]
+    <figure class="highlight"><pre><code class="language-bash" data-lang="bash">    <span class="nv">$ </span>tcwallet <span class="nt">--recipient</span> <span class="o">[</span>recipient] <span class="nt">--amount</span> <span class="o">[</span>amount]
+    </code></pre></figure>
+
+    <p>
+      For example:
+    </p>
+
+    <figure class="highlight"><pre><code class="language-bash" data-lang="bash">    <span class="nv">$ </span>tcwallet
+    71q7t17qcarlg5yxcvfibpzxra
+    0.003
     </code></pre></figure>
 
   </li>
@@ -239,8 +273,8 @@
     </li>
   
   
-
 -->
+
 </ul>
 
         <footer class="footer ">
