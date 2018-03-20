@@ -32,7 +32,7 @@ description: "Chalk uses all the best tools and merges them into one premium blo
     </p>
 
     {% highlight bash %}
-    $ tcsubmit [git_clone_url] [dataset_url]
+    $ tcsubmit --git_clone_url [git_clone_url] --dataset_url [dataset_url]
     {% endhighlight %}
 
     <p>
@@ -40,7 +40,8 @@ description: "Chalk uses all the best tools and merges them into one premium blo
     </p>
 
     {% highlight bash %}
-    $ tcsubmit https://github.com/nick11roberts/PGCnet.git \
+    $ tcsubmit
+    https://github.com/nick11roberts/PGCnet.git
     https://drive.google.com/open?id=0BzHWFkitR5d_VjJfS1ZmMDV5RmM
     {% endhighlight %}
 
@@ -53,7 +54,17 @@ description: "Chalk uses all the best tools and merges them into one premium blo
     </p>
 
     {% highlight bash %}
-    $ tcsubmit [git_clone_url] [dataset_url]
+    $ tcminer --wallet_address [wallet_address] --pool_address [pool_address]
+    {% endhighlight %}
+
+    <p>
+      For example:
+    </p>
+
+    {% highlight bash %}
+    $ tcminer
+    6xkabhmf28hr7o2v1pgo8r7nq5
+    w1bbdurg7u2clgl5mujg1pp95t
     {% endhighlight %}
 
 
@@ -65,7 +76,17 @@ description: "Chalk uses all the best tools and merges them into one premium blo
     </p>
 
     {% highlight bash %}
-    $ tcsubmit [git_clone_url] [dataset_url]
+    $ tcwallet --recipient [recipient] --amount [amount]
+    {% endhighlight %}
+
+    <p>
+      For example:
+    </p>
+
+    {% highlight bash %}
+    $ tcwallet
+    71q7t17qcarlg5yxcvfibpzxra
+    0.003
     {% endhighlight %}
 
   </li>
@@ -118,6 +139,6 @@ description: "Chalk uses all the best tools and merges them into one premium blo
       {% endif %}
     </li>
   {% endif %}
-
 -->
+
 </ul>
