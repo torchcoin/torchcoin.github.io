@@ -1,10 +1,13 @@
 <nav class="header-nav {% if site.scrollappear_enabled %}scrollappear{% endif %}">
-  <a href="{{ '/' | relative_url }}" class="header-logo" title="{{ site.name }}">{{ site.name }}</a>
+  <a href="{{ '/' | relative_url }}" class="header-logo" title="{{ site.name }}">
+    {{ site.name }}
+    <img src="{% asset 'tch_small.png' @path %}" height="72" alt="TCH logo" style="position: absolute; left: 0; right:0; margin: auto;"/>
+  </a>
   <ul class="header-links">
     {% if site.about_enabled == true %}
       <li>
         <a href="{{ 'about' | relative_url }}" title="About me">
-          {% include svg-icon.html icon="about" %}
+
         </a>
       </li>
     {% endif %}

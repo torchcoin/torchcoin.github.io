@@ -1,7 +1,7 @@
 # Mandatory settings
 
-blog_theme: light # Or use dark
-name: Chalk
+blog_theme: dark # Or use dark
+name: TorchCoin
 paginate: 25
 url: # add your site url (format: https://example.com)
 
@@ -13,8 +13,8 @@ baseurl: # Set if blog doesn't sit at the root of the domain (format: /blog)
 discus_identifier: # Add your Disqus identifier
 ga_analytics: # Add your GA Tracking Id
 local_fonts: false # Change to true if you wish to use local fonts
-rss_enabled: true # Change to false if not
-scrollappear_enabled: true # Change to false to disable
+rss_enabled: false # Change to false if not
+scrollappear_enabled: false # Change to false to disable
 social:
   dribbble: # Add your Dribbble handle
   facebook: # Add your Facebook handle
